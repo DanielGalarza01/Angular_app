@@ -10,7 +10,7 @@ export class ParentComponent implements OnInit {
   constructor() { }
 
   myFunction(): void{
-    console.log("Hello");
+    alert("Hello");
   }
 
   ngOnInit(): void {

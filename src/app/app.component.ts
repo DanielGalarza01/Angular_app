@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Capacitación Angular';
+  title = 'Capacitación Angular NEORIS 2022';
   numero = '1';
 
   mostrar = true;
