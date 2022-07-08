@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ParentComponent } from './comunication/parent/parent.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path : 'com',
+    component: ParentComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

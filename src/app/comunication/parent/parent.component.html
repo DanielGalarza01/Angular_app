@@ -1,0 +1,148 @@
+
+<div class="container"><br>
+  <h1>Inputs</h1>
+  <div class="row mb-4">
+
+    <div class="col-sm-6 shadow round pt-5">
+      <div class="mb-3">
+        <label for="emailInput1" class="form-label">Email</label>
+        <input id="emailInput1" class="form-control" type="email" placeholder="Escribe tu email...">
+      </div>
+      <div class="mb-3">
+        <label for="passInput1" class="form-label">Contraseña</label>
+        <input id="passInput1" class="form-control" type="password" placeholder="Escribe tu contraseña..." >
+      </div>
+      <div class="mb-3">
+        <label for="emailInput2" class="form-label">Email</label>
+        <input id="emailInput2" class="form-control form-control-lg" type="email" placeholder="Escribe tu email con form-control-lg...">
+      </div>
+      <div class="mb-3">
+        <label for="passInput2" class="form-label">Contraseña</label>
+        <input id="passInput2 " class="form-control form-control-sm" type="password" placeholder="Escribe tu contraseña con form-control-sm..." >
+      </div>
+      <div class="mb-3">
+        <label for="comentId" class="form-label">Comentarios</label>
+        <textarea id="comentId" class="form-control" disabled></textarea>
+      </div>
+      <div class="mb-3">
+        <input type="file" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <input class="form-control" list="lista" placeholder="Busca...">
+        <datalist id="lista">
+          <option value="Linux">
+          <option value="Mac">
+          <option value="Windows">
+        </datalist>
+      </div>
+      <div class="mt-3 mb-3">
+        <input type="color" class="form-control form-control-color">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <h1>Selectores</h1>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="mb-3">
+        <label for="select1">Elige un número</label>
+        <select id="select1"  class="form-select mb-3" >
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+        <label for="select1">select con la propiedad size para que tenga scroll</label>
+        <select id="select1" size="2" class="form-select mb-4" >
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <h1>Check box</h1>
+
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="check1">
+    <label for="check1" class="form-check-label">Acepta los terminos</label>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="check2" checked>
+    <label for="check2" class="form-check-label">Acepta los terminos(con la propiedad checked)</label>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="check3" disabled>
+    <label for="check3" class="form-check-label">Acepta los terminos(con la propiedad Disabled de HTML)</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheck1">
+    <label class="form-check-label" for="flexSwitchCheck1">div class "form-check form-switch"</label>
+  </div>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" id="check4" name="radio-example">
+    <label for="check4" class="form-check-label">Ambos input deben tener la misma propiedad name</label>
+  </div>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" id="check5" name="radio-example">
+    <label for="check5" class="form-check-label">para estar vinculados</label>
+  </div>
+  <div class="form-check form-switch form-check-inline">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheck2">
+    <label class="form-check-label" for="flexSwitchCheck2">div class "form-check-inline"</label>
+  </div>
+  <div class="form-check  form-check-inline">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheck3">
+    <label class="form-check-label" for="flexSwitchCheck3">div class "form-check-inline"</label>
+  </div>
+  <div class="m-3">
+    <label for="range1" class="form-label">Range</label>
+    <input type="range" class="form-range" id="range1" min="0" max="8" step="2">
+  </div>
+  <h1>Input group</h1>
+  <div class="m-3 input-group input-group-sm">
+    <span class="input-group-text">https://</span>
+    <input type="text" class="form-control" placeholder="url">
+  </div>
+  <div class="m-3 input-group input-group-lg">
+    <span class="input-group-text">$</span>
+    <input type="text" class="form-control" placeholder="cantidad">
+  </div>
+  <div class="m-3 input-group">
+    <div class="input-group-text">
+      <input type="checkbox" class="form-check-input">
+    </div>
+    <input type="text" class="form-control" placeholder="Nombre">
+    <input type="text" class="form-control" placeholder="Apellido">
+  </div>
+  <div class="m-3 input-group input-group-lg">
+    <input type="text" class="form-control" placeholder="Ingrese su....">
+    <button class="btn btn-primary" (click)="myFunction()">Enviar</button>
+  </div>
+  <div class="m-3 input-group">
+    <button type="button" class="btn btn-outline-secondary">Enviar</button>
+    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown"></button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Acción1</a></li>
+      <li><a class="dropdown-item" href="#">Acción2</a></li>
+      <li><a class="dropdown-item" href="#">Acción3</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Acción4</a></li>
+    </ul>
+    <input type="text" class="form-control" placeholder="Apellido">
+  </div>
+</div><li class="dropdown-item">1</li>
+

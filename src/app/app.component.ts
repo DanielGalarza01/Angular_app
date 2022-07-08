@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular_app';
+  title = 'Capacitación Angular';
+  numero = '1';
+
+  mostrar = true;
+
+  frase : any = {
+    mensaje : 'El doc esta vivo',
+    autor : 'Marty'
+  }
+
+  personajes: string[]=['Marty','Doc','Biff'];
 }
